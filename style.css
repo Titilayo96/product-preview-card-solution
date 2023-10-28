@@ -1,0 +1,136 @@
+ @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(30, 38%, 92%);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    display: flex;
+    background-color: #fff;
+    width: 77vh;
+    border-radius: 10px;
+    margin: 0 1rem;
+}
+
+.card {
+    width: 50%;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    object-fit: cover;
+}
+
+.right {
+    padding: 30px;
+    width: 50%;
+} 
+
+.group {
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    margin-top: -1px; 
+} 
+
+.headline {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+} 
+
+.review {
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 22px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+}
+
+.new {
+    color: hsl(158, 36%, 37%);
+    font-size: 32px;
+}
+
+.old {
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+} 
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    border-radius:  10px;
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
+.cart {
+    margin-right: 10px;
+    top: 2px;
+    position: relative;
+}
+@media only screen and (max-width: 600px) {
+    .app {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        height: 50%;
+    }
+    .card img {
+        content: url("./images/image-product-mobile.jpg");
+        border-radius: 10px 10px 0 0;
+    }
+
+    .headline {
+        font-size: 40px;
+    }
+
+    .review {
+        font-size: 16.8px;
+    }
+} 
